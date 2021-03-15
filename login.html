@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="ico/png" href="ico/favicon.png">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>LOGIN</title>
+</head>
+
+<body>
+            <!--CARGA-->
+            <div class="loader">
+                <img src="gif/ezgif-2-6d0b072c3d3f.gif" alt="Loading..." />
+            </div>
+            <!--CARGA-->
+    
+    <section class="pardo_section">
+        <div class="login_box">
+            <div class="form">
+                <h2>Login</h2>
+                <form action="index.html" method="post" class="formulario" onsubmit="return validar()">
+                    <div class="inputBx">
+                        <input type="text" placeholder="Correo" id="user">
+                        <img src="ico/usuario.png" class="login_iconos">
+                    </div>
+                    <div class="inputBx">
+                        <input type="password" placeholder="Contraseña" id="password">
+                        <img src="ico/contraseña.png" class="login_iconos">
+                    </div>
+                    <label class="remeber"><input type="checkbox">Recordar cuenta</label>
+                    <div class="inputBx">
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
+                <p>¿No tiene <a href="registro.html">cuenta</a>?</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+    </script>
+
+</body>
+<footer class="finLogin">
+    <div class="nav">
+        <nav class="navegacion">
+            <ul class="nav_ul">
+                <li class="li_nav">
+                    <div class="capa_ico"><a href="index.html"><img class="icon" src="ico/home.png" alt=""></a><br><a class="nav_a_login" href="index.html">Home</a></div>
+                    </li>
+                <li class="li_nav">
+                    <div class="capa_ico"><a href="QUIENES_SOMOS.html"><img class="icon" src="ico/somos.png" alt=""></a><br><a class="nav_a_login" href="QUIENES_SOMOS.html">Quienes somos</a></div>
+                    </li>
+                <li class="li_nav">
+                    <div class="capa_ico"><a href="proyectos.html"><img class="icon" src="ico/instalaciones.png" alt=""></a><br><a class="nav_a_login" href="proyectos.html">Proyectos</a></div> 
+                </li>
+                <li class="li_nav">
+                    <div class="capa_ico"><a href="servicios.html"><img class="icon" src="ico/servicio.png" alt=""></a><br><a class="nav_a_login" href="servicios.html">Servicios</a></div>
+                </li>
+                <li class="li_nav">
+                    <div class="capa_ico"><a href="productos.html"><img class="icon" src="ico/producto.png" alt=""></a><br><a class="nav_a_login" href="productos.html">Productos</a></div> 
+                </li>
+                <li class="li_nav">
+                    <div class="capa_ico"><a href="twitter.html"><img class="icon" src="ico/twitteroscar.png" alt=""></a><br><a class="nav_a_login" href="twitter.html">Blog</a></div> 
+                </li>
+                <li class="li_nav">
+                  <div class="capa_ico"><a href="login.html"><img class="icon" src="ico/contacto.png" alt=""></a><br><a class="nav_a_login" href="login.html">Área Clientes</a></div> 
+              </li>
+            </ul>
+        </nav>
+        </div>
+
+</footer>
+</html>

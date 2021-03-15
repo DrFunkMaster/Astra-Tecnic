@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Noticias</title>
+    <link rel="icon" type="ico/png" href="ico/favicon.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="icon" type="image/png" href="ico/twitter.png">-->
+    <style type="text/css">
+    /*He metido en el HTML un css embebido SOLO para hacerlo responsive (para que no se mezcle con el de mis compañeros), lo demás está en css correspondiente*/
+        @media(max-width: 1300px){
+            .prado-opciones{
+                display: none;
+            }
+            .prado-opciones button{
+                padding: 10px 10px;
+            }
+            .prado-contenedor{
+                grid-template-columns: 10% 50% 40%;
+            }
+            .prado-centro{
+                width: 99.6%;
+            }
+            .prado-opciones div a i{
+                padding: 0;
+                border-radius: 50%;
+            }
+            .prado-mensajeperfil{
+                grid-template-columns: 20% 60% 20%;
+            }
+        }
+        @media(max-width:960px){
+            .prado-menu{
+                display: none;
+            }
+            .prado-menutendencias{
+                display: none;
+            }
+            .prado-contenedor{
+                grid-template-columns: 100%;
+            }
+            .prado-mensajeperfil{
+                grid-template-columns: 20% 60% 20%;
+            }
+        }
+    </style>
+</head>
+<body class="prado-todo">
+    <!--CARGA-->
+    <script>
+        window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+    });
+    </script>
+    <div class="loader">
+        <img src="gif/ezgif-2-6d0b072c3d3f.gif" alt="Loading..." />
+    </div>
+    <!--CARGA-->
+    
+   <div class="prado-contenedor">
+       <!--Menú de la izquierda, inicio explorar etc-->
+       <div class="prado-menu">
+           <div class="prado-centro">
+               <div class="prado-logo">
+                   <i class="fa fa-twitter"></i>
+               </div>
+               <div class="prado-opciones">
+                   <div><a href="index.html"><i class="fa fa-home"></i>Inicio</a></div>
+                   <div><a href="menuInicio.html"><i class="fa fa-bars"></i>Menú</a></div>
+                   <div><a href="QUIENES_SOMOS.html"><i class="fa fa-users"></i>Quiénes somos</a></div>
+                   <div><a href="productos.html"><i class="fa fa-shopping-cart"></i>Productos</a></div>
+                   <div><a href="proyectos.html"><i class="fa fa-tasks"></i>Proyectos</a></div>
+                   <div><a href="servicios.html"><i class="fa fa-list-alt"></i>Servicios</a></div>
+                   <div><a href="twitter.html"><i class="fa fa-book"></i>Blog</a></div>
+                   <div><a href="login.html"><i class="fa fa-user-o"></i>Inicia sesión</a></div>
+                   <div><button>Twittear</button></div>
+               </div>
+           </div>
+       </div>
+       <div class="prado-contenido">
+           <div class="prado-preferencias">
+                <span>
+                    <a href="menuInicio.html">Inicio</a>
+                </span>
+                <span>
+                    <i class="fa fa-star-o"></i>
+                </span>
+           </div>
+
+           <div class="prado-twittear">
+               <div class="prado-tweet">
+                   <div class="prado-mensaje">
+                       <span><img src="img/prado.png"></span>
+                       <span><input type="text" placeholder="¿Qué está pasando?"></span>
+                   </div>
+                   <div class="prado-añadir">
+                       <div class="prado-imagenesañadir">
+                           <span><a href=""><i class="fa fa-picture-o"></i></a></span>
+                           <span><a href=""><i class="fa fa-bar-chart"></i></a></span>
+                           <span><a href=""><i class="fa fa-smile-o"></i></a></span>
+                           <span><a href=""><i class="fa fa-calendar-plus-o"></i></a></span>
+                       </div>
+                       <span><button>Twittear</button></span>
+                   </div>
+               </div>
+               <!--Tweet 1a persona-->
+               <div class="prado-otrostweets">
+                   <div class="prado-otrotweet">
+                       <div class="prado-mensajeperfil">
+                           <div class="prado-otrosperfiles">
+                               <img src="img/angel.jpeg">
+                           </div>
+                           <div class="prado-nombre">
+                               <span><p><b>Angel Poncelas</b><i class="fa fa-check-circle"></i>@angelponmon <small>2h</small></p></span>
+                               <div class="prado-mensajetweet">
+                                   <p>El Congreso invertirá casi 3 millones en 'blindarse' ante posibles ciberataques.</p>
+                               </div>
+                           </div>
+                           <div class="prado-masopciones2">
+                                <i class="fa fa-ellipsis-hfa fa-"></i>
+                           </div>
+                       </div>
+
+                       <div class="prado-imagenperfil">
+                           <img src="img/noticia1.jpg">
+                       </div>
+
+                       <div class="prado-reacciones">
+                           <div class="prado-comentar"><i class="fa fa-comment-o"></i><p>125</p></div>
+                           <div class="prado-retwittear"><i class="fa fa-retweet"></i><p>359</p></div>
+                           <div class="prado-like"><i class="fa fa-heart-o"></i><p>782</p></div>
+                           <div class="prado-compartir"><i class="fa fa-upload"></i><p>34</p></div>
+                       </div>
+                   </div>
+               </div>
+               <!--Fin Tweet 1a persona-->
+               <!--Tweet 2a persona-->
+               <div class="prado-otrostweets">
+                <div class="prado-otrotweet">
+                    <div class="prado-mensajeperfil">
+                        <div class="prado-otrosperfiles">
+                            <img src="img/alberto.png">
+                        </div>
+                        <div class="prado-nombre">
+                            <span><p><b>Alberto Pardo</b><i class="fa fa-check-circle"></i>@albertopb1943 <small>7h</small></p></span>
+                            <div class="prado-mensajetweet">
+                                <p>Google anclará por primera vez uno de sus cables submarinos en España.</p>
+                            </div>
+                        </div>
+                        <div class="prado-masopciones2">
+                             <i class="fa fa-ellipsis-hfa fa-"></i>
+                        </div>
+                    </div>
+
+                    <div class="prado-imagenperfil">
+                        <img src="img/noticia2.jpg">
+                    </div>
+
+                    <div class="prado-reacciones">
+                        <div class="prado-comentar"><i class="fa fa-comment-o"></i><p>59</p></div>
+                        <div class="prado-retwittear"><i class="fa fa-retweet"></i><p>284</p></div>
+                        <div class="prado-like"><i class="fa fa-heart-o"></i><p>639</p></div>
+                        <div class="prado-compartir"><i class="fa fa-upload"></i><p>17</p></div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Tweet 2a persona-->
+            <!--Tweet 3a persona-->
+            <div class="prado-otrostweets">
+                <div class="prado-otrotweet">
+                    <div class="prado-mensajeperfil">
+                        <div class="prado-otrosperfiles">
+                            <img src="img/OM_182.jpeg">
+                        </div>
+                        <div class="prado-nombre">
+                            <span><p><b>Oscar Maya</b><i class="fa fa-check-circle"></i>@mayeroscar <small>3 mar.</small></p></span>
+                            <div class="prado-mensajetweet">
+                                <p>El uso de inteligencia contra las amenazas se dispara.</p>
+                            </div>
+                        </div>
+                        <div class="prado-masopciones2">
+                             <i class="fa fa-ellipsis-hfa fa-"></i>
+                        </div>
+                    </div>
+
+                    <div class="prado-imagenperfil">
+                        <img src="img/noticia3.jpg">
+                    </div>
+
+                    <div class="prado-reacciones">
+                        <div class="prado-comentar"><i class="fa fa-comment-o"></i><p>178</p></div>
+                        <div class="prado-retwittear"><i class="fa fa-retweet"></i><p>248</p></div>
+                        <div class="prado-like"><i class="fa fa-heart-o"></i><p>835</p></div>
+                        <div class="prado-compartir"><i class="fa fa-upload"></i><p>10</p></div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Tweet 3a persona-->
+            <!--Tweet 4a persona-->
+            <div class="prado-otrostweets">
+                <div class="prado-otrotweet">
+                    <div class="prado-mensajeperfil">
+                        <div class="prado-otrosperfiles">
+                            <img src="img/Guille.jpeg">
+                        </div>
+                        <div class="prado-nombre">
+                            <span><p><b>Guillermo Pérez</b><i class="fa fa-check-circle"></i>@guilledich <small>27 feb.</small></p></span>
+                            <div class="prado-mensajetweet">
+                                <p>Fujitsu y la Universidad de Hokkaido desarrollan una tecnología de IA Explicable.</p>
+                            </div>
+                        </div>
+                        <div class="prado-masopciones2">
+                             <i class="fa fa-ellipsis-hfa fa-"></i>
+                        </div>
+                    </div>
+
+                    <div class="prado-imagenperfil">
+                        <img src="img/noticia4.jpg">
+                    </div>
+
+                    <div class="prado-reacciones">
+                        <div class="prado-comentar"><i class="fa fa-comment-o"></i><p>95</p></div>
+                        <div class="prado-retwittear"><i class="fa fa-retweet"></i><p>528</p></div>
+                        <div class="prado-like"><i class="fa fa-heart-o"></i><p>873</p></div>
+                        <div class="prado-compartir"><i class="fa fa-upload"></i><p>23</p></div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Tweet 4a persona-->
+            <!--Tweet 5a persona-->
+            <div class="prado-otrostweets">
+                <div class="prado-otrotweet">
+                    <div class="prado-mensajeperfil">
+                        <div class="prado-otrosperfiles">
+                            <img src="img/ortega.png">
+                        </div>
+                        <div class="prado-nombre">
+                            <span><p><b>Alejandro Ortega</b><i class="fa fa-check-circle"></i>@alex_ortega <small>22 feb.</small></p></span>
+                            <div class="prado-mensajetweet">
+                                <p>Humano contra máquina: ¿se puede hackear un cerebro?</p>
+                            </div>
+                        </div>
+                        <div class="prado-masopciones2">
+                             <i class="fa fa-ellipsis-hfa fa-"></i>
+                        </div>
+                    </div>
+
+                    <div class="prado-imagenperfil">
+                        <img src="img/noticia5.jpg">
+                    </div>
+
+                    <div class="prado-reacciones">
+                        <div class="prado-comentar"><i class="fa fa-comment-o"></i><p>38</p></div>
+                        <div class="prado-retwittear"><i class="fa fa-retweet"></i><p>646</p></div>
+                        <div class="prado-like"><i class="fa fa-heart-o"></i><p>914</p></div>
+                        <div class="prado-compartir"><i class="fa fa-upload"></i><p>12</p></div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Tweet 5a persona-->
+            <!--Tweet 6a persona-->
+            <div class="prado-otrostweets">
+                <div class="prado-otrotweet">
+                    <div class="prado-mensajeperfil">
+                        <div class="prado-otrosperfiles">
+                            <img src="img/prado.png">
+                        </div>
+                        <div class="prado-nombre">
+                            <span><p><b>Alejandro Prado</b><i class="fa fa-check-circle"></i>@alexelprado <small>13 ene.</small></p></span>
+                            <div class="prado-mensajetweet">
+                                <p>¿Recibirías un trato más justo de tu jefe si este fuera un robot?</p>
+                            </div>
+                        </div>
+                        <div class="prado-masopciones2">
+                             <i class="fa fa-ellipsis-hfa fa-"></i>
+                        </div>
+                    </div>
+
+                    <div class="prado-imagenperfil">
+                        <img src="img/noticia6.jpg">
+                    </div>
+
+                    <div class="prado-reacciones">
+                        <div class="prado-comentar"><i class="fa fa-comment-o"></i><p>99</p></div>
+                        <div class="prado-retwittear"><i class="fa fa-retweet"></i><p>442</p></div>
+                        <div class="prado-like"><i class="fa fa-heart-o"></i><p>659</p></div>
+                        <div class="prado-compartir"><i class="fa fa-upload"></i><p>32</p></div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin Tweet 6a persona-->
+           </div>
+       </div>
+
+       <div class="prado-menutendencias">
+           <div class="prado-tendenciascentro">
+               <div class="prado-buscar">
+                   <input type="search" placeholder="Buscar en Twitter">
+                   <span><i class="fa fa-search"></i></span>
+               </div><br>
+
+               <div class="prado-tendencias">
+                   <div class="prado-encabezado">
+                       <p>¿Qúe está pasando?</p>
+                   </div>
+                   <div class="prado-tendencias1">
+                       <!--Tendencia1-->
+                       <div class="prado-primeratendencia">
+                           <div class="prado-mensajetendencia">
+                               <div class="prado-titulotendencia">
+                                   <p>Usuarios en Estados Unidos encontraron similitudes entre el nuevo logo y la figura de Adolf Hitler.</p>
+                               </div>
+                               <div class="prado-subtitulotendencia">
+                                   <p>¿Por qué Amazon modificó el logo de su ‘app’? Conozca la razón y su relación con Hitler.</p>
+                               </div>
+                               <div class="prado-subsubtitulotendencia">
+                                    <p>Tendencia en <a href="">#Tecnología</a>,<a href="">#España</a></p>
+                               </div>
+                           </div>
+                           <div class="prado-fototendencias">
+                                <img src="img/tendencia1.jpg">
+                           </div>
+                       </div>
+                       <!--Fin Tendencia1-->
+                       <!--Tendencia2-->
+                       <div class="prado-primeratendencia">
+                        <div class="prado-mensajetendencia">
+                            <div class="prado-titulotendencia">
+                                <p>El hotel denominado Estación Voyager tendrá una capacidad máxima para 400 personas.</p>
+                            </div>
+                            <div class="prado-subtitulotendencia">
+                                <p>Voyager: ponen fecha para la puesta en órbita de un hotel comercial espacial. ¿Cuándo será lanzado?</p>
+                            </div>
+                            <div class="prado-subsubtitulotendencia">
+                                 <p>Tendencia en <a href="">#Tecnología</a>,<a href="">#España</a></p>
+                            </div>
+                        </div>
+                        <div class="prado-fototendencias">
+                             <img src="img/tendencia2.jpg">
+                        </div>
+                        </div>
+                        <!--Fin Tendencia2-->
+                    </div>
+                </div>        
+                       <!--Quién seguir-->
+                       <div class="prado-seguir">
+                           <div class="prado-encabezado">
+                               <p>A quién seguir</p>
+                           </div>
+                           <div class="prado-personas">
+                                <!--Persona1-->
+                                    <div class="prado-persona">
+                                        <div class="prado-personasfoto">
+                                            <img src="img/prado.png">
+                                        </div>
+                                        <div class="prado-personanombre">
+                                            <div class="prado-nombrereal">
+                                                 <h3>Alejandro Prado</h3>
+                                            </div>
+                                            <div class="prado-nickname">
+                                                <p>@alexelprado</p>
+                                            </div>
+                                        </div>
+                                        <div class="prado-enviarfollow">
+                                            <button>Seguir</button>
+                                        </div>
+                                    </div>  
+                                <!--Fin Persona1-->
+                                <!--Persona2-->
+                                <div class="prado-persona">
+                                    <div class="prado-personasfoto">
+                                        <img src="img/ortega.png">
+                                    </div>
+                                    <div class="prado-personanombre">
+                                        <div class="prado-nombrereal">
+                                             <h3>Alejandro Ortega</h3>
+                                        </div>
+                                        <div class="prado-nickname">
+                                            <p>@alex_ortega</p>
+                                        </div>
+                                    </div>
+                                    <div class="prado-enviarfollow">
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>  
+                                <!--Fin Persona2-->
+                                <!--Persona3-->
+                                <div class="prado-persona">
+                                    <div class="prado-personasfoto">
+                                        <img src="img/Guille.jpeg">
+                                    </div>
+                                    <div class="prado-personanombre">
+                                        <div class="prado-nombrereal">
+                                             <h3>Guillermo Pérez</h3>
+                                        </div>
+                                        <div class="prado-nickname">
+                                            <p>@guilledich</p>
+                                        </div>
+                                    </div>
+                                    <div class="prado-enviarfollow">
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>  
+                                <!--Fin Persona3-->
+                                <!--Persona4-->
+                                <div class="prado-persona">
+                                    <div class="prado-personasfoto">
+                                        <img src="img/OM_182.jpeg">
+                                    </div>
+                                    <div class="prado-personanombre">
+                                        <div class="prado-nombrereal">
+                                             <h3>Oscar Maya</h3>
+                                        </div>
+                                        <div class="prado-nickname">
+                                            <p>@mayeroscar</p>
+                                        </div>
+                                    </div>
+                                    <div class="prado-enviarfollow">
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>  
+                                <!--Fin Persona4-->
+                                <!--Persona5-->
+                                <div class="prado-persona">
+                                    <div class="prado-personasfoto">
+                                        <img src="img/alberto.png">
+                                    </div>
+                                    <div class="prado-personanombre">
+                                        <div class="prado-nombrereal">
+                                             <h3>Alberto Pardo</h3>
+                                        </div>
+                                        <div class="prado-nickname">
+                                            <p>@albertopb1943</p>
+                                        </div>
+                                    </div>
+                                    <div class="prado-enviarfollow">
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>  
+                                <!--Fin Persona5-->
+                                <!--Persona6-->
+                                <div class="prado-persona">
+                                    <div class="prado-personasfoto">
+                                        <img src="img/angel.jpeg">
+                                    </div>
+                                    <div class="prado-personanombre">
+                                        <div class="prado-nombrereal">
+                                             <h3>Ángel Poncelas</h3>
+                                        </div>
+                                        <div class="prado-nickname">
+                                            <p>@angelponmon</p>
+                                        </div>
+                                    </div>
+                                    <div class="prado-enviarfollow">
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>  
+                                <!--Fin Persona6-->
+                                  
+                           </div>
+
+                        <!-- Fin Quién seguir-->
+                       <div class="prado-masopciones">
+                            <a href="">Más opciones</a>
+                       </div>
+                    </div>   
+    
+           </div>
+       </div>
+
+   </div>
+</body>
+
+</html>

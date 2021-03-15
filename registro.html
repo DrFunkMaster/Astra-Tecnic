@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="ico/png" href="ico/favicon.png">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+            <!--CARGA-->
+            <div class="loader">
+                <img src="gif/ezgif-2-6d0b072c3d3f.gif" alt="Loading..." />
+            </div>
+            <!--CARGA-->
+    
+    <section class="pardo_section">
+        <div class="login_box">
+            <div class="form">
+                <h2>Registro</h2>
+                <form action="login.html" method="post" onsubmit="return registro()">
+                    <div class="inputBx">
+                        <input type="text" placeholder="Correo" id="user">
+                        <img src="ico/usuario.png" class="login_iconos">
+                    </div>
+                    <div class="inputBx">
+                        <input type="password" placeholder="Contraseña" id="password">
+                        <img src="ico/contraseña.png" class="login_iconos">
+                    </div>
+                    <div class="inputBx">
+                        <input type="password" placeholder="Repita su contraseña" id="rpassword">
+                        <img src="ico/contraseña.png" class="login_iconos">
+                    </div>
+                    <label class="remeber"><input type="checkbox"> Recordar cuenta</label>
+                    <div class="inputBx">
+                        <input type="submit" value="Registro">
+                    </div>
+                </form>
+                <p>¿Ya tienes <a href="login.html">cuenta</a>?</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+    </script>
+
+</body>
+</html>

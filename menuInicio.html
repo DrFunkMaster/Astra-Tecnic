@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="icon" type="ico/png" href="ico/favicon.png">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>Menú</title>
+</head>
+<body class="guille_body">
+        <!--CARGA-->
+        <div class="loader">
+            <img src="gif/ezgif-2-6d0b072c3d3f.gif" alt="Loading..." />
+        </div>
+        <!--CARGA-->
+    <h1 class="guille_tituloPagina">ASTRA TECNIC</h1>
+    <br><br>
+    <div class="guille_contenedorPrincipal">
+    <ul class="guille_lista">
+        <li class="guille_elementoLista"><a class="guille_menu" href="index.html">Inicio</a></li>
+        <li class="guille_elementoLista"><a class="guille_menu" href="QUIENES_SOMOS.html">Quienes somos</a></li>
+        <li class="guille_elementoLista"><a class="guille_menu" href="proyectos.html">Proyectos</a></li>
+        <li class="guille_elementoLista"><a class="guille_menu" href="productos.html">Productos</a></li>
+        <li class="guille_elementoLista"><a class="guille_menu" href="servicios.html">Servicios</a></li>
+        <li class="guille_elementoLista"><a class="guille_menu" href="twitter.html">Blog</a></li>
+        <li class="guille_elementoLista"><a class="guille_menu" href="login.html">Area clientes</a></li>
+        <div class="guille_cursor"></div>
+    </ul>
+    <script>
+        const cursor = document.querySelector('.guille_cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        })
+    </script>
+    </div>
+    <script>
+        window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+    </script>
+
+</body>
+<footer class="finInicio">
+
+    <div class="PIES">
+        <h4>Síguenos en Redes</h4>
+        <div>
+            <a href="https://www.facebook.com/"><img class="redes" src="ico/facebook.png"></a>
+            <a href="https://www.instagram.com/"><img class="redes" src="ico//instagram.png"></a>
+            <a href="https://twitter.com/"><img class="redes" src="ico//twitteroscar.png"></a>
+            <a href="https://es.linkedin.com/"><img class="redes" src="ico//linkedin.png"></a>
+            <a href="https://www.youtube.com/"><img class="redes" src="ico//youtube.png"></a>
+            <a href="https://www.marca.com/"><img class="redes" src="ico//WhatsApp.png"></a>
+        </div>
+    </div>
+    <h2 class="FINAL">&copy;Astra Tecnic</h2>
+</footer> 
+</html>

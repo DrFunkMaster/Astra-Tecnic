@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="ico/png" href="ico/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Servidores</title>
+</head>
+<body class="bodyAngelServidores">
+    <!--CARGA-->
+    <div class="loader">
+      <img src="gif/ezgif-2-6d0b072c3d3f.gif" alt="Loading..." />
+  </div>
+  <!--CARGA-->
+
+  
+   <section class="servidoresangel">
+     <div class="slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="https://www.ibm.com/es-es/products/z15/details"><img src="img/ibmz15.webp" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://www.ibm.com/es-es/products/linuxone-iii/details"><img src="img/ibmlinuxoneIII.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://www.dell.com/es-es/work/shop/servidores-dell-poweredge/smart-value-poweredge-r740xd-server-optimal/spd/poweredge-r740xd/per740xd01m"><img src="img/dell.webp" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://www.hpe.com/es/es/servers/superdome.html"><img src="img/hpesuperdome.webp" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://buy.hpe.com/es/es/servers/apollo-systems/apollo-6500-system/apollo-6500-system/hpe-apollo-6500-gen10-system/p/1010742495"><img src="img/HPE Apollo.webp" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://buy.hpe.com/es/es/servers/proliant-dl-servers/proliant-dl300-servers/proliant-dl380-server/hpe-proliant-dl380-gen10-server/p/1010026818"><img src="img/hppro.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://www.dell.com/es-es/work/shop/servidores-dell-poweredge/poweredge-r940xa-full-configuration/spd/poweredge-r940xa/emea_r940xa_vi_vp"><img src="img/Dell-R940xa.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-s3260-storage-server/index.html"><img src="img/servidorcisco.png" alt=""></a></div>
+            </div>
+    </div>  
+     </div>  
+   </section>
+   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+   <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 0,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      loop:true,
+    });
+  </script>
+   </script> 
+   <script>
+    window.addEventListener("load", function () {
+const loader = document.querySelector(".loader");
+loader.className += " hidden"; // class "loader hidden"
+});
+</script>
+</body>
+<footer class="finServidores">
+  <div class="nav">
+    <nav class="navegacion">
+      <ul class="nav_ul">
+          <li class="li_nav">
+              <div class="capa_ico"><a href="index.html"><img class="icon" src="ico/home.png" alt=""></a><br><a class="nav_a" href="index.html">Home</a></div>
+              </li>
+          <li class="li_nav">
+              <div class="capa_ico"><a href="QUIENES_SOMOS.html"><img class="icon" src="ico/somos.png" alt=""></a><br><a class="nav_a" href="QUIENES_SOMOS.html">Quienes somos</a></div>
+              </li>
+          <li class="li_nav">
+              <div class="capa_ico"><a href="proyectos.html"><img class="icon" src="ico/instalaciones.png" alt=""></a><br><a class="nav_a" href="proyectos.html">Proyectos</a></div> 
+          </li>
+          <li class="li_nav">
+              <div class="capa_ico"><a href="servicios.html"><img class="icon" src="ico/servicio.png" alt=""></a><br><a class="nav_a" href="servicios.html">Servicios</a></div>
+          </li>
+          <li class="li_nav">
+              <div class="capa_ico"><a href="productos.html"><img class="icon" src="ico/producto.png" alt=""></a><br><a class="nav_a" href="productos.html">Productos</a></div> 
+          </li>
+          <li class="li_nav">
+              <div class="capa_ico"><a href="twitter.html"><img class="icon" src="ico/twitteroscar.png" alt=""></a><br><a class="nav_a" href="twitter.html">Blog</a></div> 
+          </li>
+          <li class="li_nav">
+            <div class="capa_ico"><a href="login.html"><img class="icon" src="ico/contacto.png" alt=""></a><br><a class="nav_a" href="login.html">Área Clientes</a></div> 
+        </li>
+      </ul>
+  </nav>
+</div>
+
+  <div class="PIES">
+      <h4>Síguenos en Redes</h4>
+      <div>
+          <a href="https://www.facebook.com/"><img class="redes" src="ico/facebook.png"></a>
+          <a href="https://www.instagram.com/"><img class="redes" src="ico//instagram.png"></a>
+          <a href="https://twitter.com/"><img class="redes" src="ico/twitteroscar.png"></a>
+          <a href="https://es.linkedin.com/"><img class="redes" src="ico//linkedin.png"></a>
+          <a href="https://www.youtube.com/"><img class="redes" src="ico//youtube.png"></a>
+          <a href="https://www.marca.com/"><img class="redes" src="ico//WhatsApp.png"></a>
+      </div>
+  </div>
+  <h2 class="FINAL">&copy;Astra Tecnic</h2>
+</footer> 
+</html>
